@@ -12,18 +12,17 @@ batch_size = 256
 
 cross entropy: 0.8189
 
-![1571490866051](https://github.com/mousecpn/resnet_AI_HW1/tree/master/images/1571490866051.png)
+<img src="images/1571490866051.png" alt="1571490866051" style="zoom: 33%;" />
 
 Training accuracy: 92.44%
 
-![1571490872553](https://github.com/mousecpn/resnet_AI_HW1/edit/master/images\1571490872553.png)
+<img src="images/1571490872553.png" alt="1571490872553" style="zoom: 33%;" />
 
 #### Validation
 
 Validation accuracy: 81.89%
 
-![1571490880643](https://github.com/mousecpn/resnet_AI_HW1/edit/master/images\1571490880643.png)
-
+<img src="images/1571490880643.png" alt="1571490880643" style="zoom: 33%;" />
 
 
 Accuracy of bird: 71.79%
@@ -46,7 +45,7 @@ Accuracy of ship: 86.11%
 
 Accuracy of trunk: 78.26%
 
-![1571491163091](https://github.com/mousecpn/resnet_AI_HW1/edit/master/images\1571491163091.png)
+<img src="images/1571491163091.png" alt="1571491163091" style="zoom: 33%;" />
 
 
 
@@ -54,7 +53,7 @@ Accuracy of trunk: 78.26%
 
 conv1, kernel_size = 7*7, stride = 2
 
-![1571491187364](https://github.com/mousecpn/resnet_AI_HW1/edit/master/images\1571491187364.png)
+<img src="images/1571491187364.png" alt="1571491187364" style="zoom: 33%;" />
 
 #### Feature mapping visualization
 
@@ -66,13 +65,13 @@ conv1, kernel_size = 7*7, stride = 2
 
 **Feature maps and its reconstruction**
 
-##### ![图片2](https://github.com/mousecpn/resnet_AI_HW1/edit/master/images/图片2.png)
+##### <img src="images\1571491187364.png" alt="1571491187364" style="zoom: 33%;" />
 
 "**Backward**" means taking the a certain residue blocks' output and doing the reversing manipulation. For convolutional layer, the reversing manipulation is the deconvolutional layer with same kernel value; for maxpooling, the reversing manipulation is unpooling. So the backward is the **reconstruction pattern** of the activation of a certain residue block.
 
 It is interesting that for a residue block, there is two path to reconstruct the image, by shortcut or by residue pathway(several deconvolutional operations). In the picture above, conv1_backward and conv2_backward just follow the residue pathway, and the reconstruction still keep something of the original image. But as for the conv5_x block, I make a comparison between these two result with conv5_x blocks which is quite deep in the resnet.
 
-![](https://github.com/mousecpn/resnet_AI_HW1/edit/master/images/图片1.png)
+<img src="images/图片1.png" alt="图片1" style="zoom: 33%;" />
 
 The result show that if we just follow the residue pathway, the reconstructions seem making no sense. However, if we just follow the shortcut, it seems that there are still some pattern remaining, although they are very blurred  due to the information loss during the forward of resnet.
 
@@ -80,7 +79,7 @@ And there is another way to reconstruct the image. Using a certain feature maps 
 
 Here is the visualization.
 
-![图片5](https://github.com/mousecpn/resnet_AI_HW1/edit/master/images/图片5.png)
+<img src="images/图片5.png" alt="图片5" style="zoom: 33%;" />
 
 #### Feedback
 
