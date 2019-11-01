@@ -1,4 +1,4 @@
-# Assignment1 of Artificial Intelligence/宋品皓
+# Assignment1 of Artificial Intelligence of PKUSZ
 
 #### Training parameter
 
