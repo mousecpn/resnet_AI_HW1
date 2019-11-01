@@ -12,7 +12,7 @@ batch_size = 256
 
 cross entropy: 0.8189
 
-![1571490866051](https://github.com/mousecpn/resnet_AI_HW1/edit/master/images/1571490866051.png)
+![1571490866051](https://github.com/mousecpn/resnet_AI_HW1/tree/master/images/1571490866051.png)
 
 Training accuracy: 92.44%
 
@@ -66,13 +66,13 @@ conv1, kernel_size = 7*7, stride = 2
 
 **Feature maps and its reconstruction**
 
-##### ![图片2](https://github.com/mousecpn/resnet_AI_HW1/edit/master/images\图片2.png)
+##### ![图片2](https://github.com/mousecpn/resnet_AI_HW1/edit/master/images/图片2.png)
 
 "**Backward**" means taking the a certain residue blocks' output and doing the reversing manipulation. For convolutional layer, the reversing manipulation is the deconvolutional layer with same kernel value; for maxpooling, the reversing manipulation is unpooling. So the backward is the **reconstruction pattern** of the activation of a certain residue block.
 
 It is interesting that for a residue block, there is two path to reconstruct the image, by shortcut or by residue pathway(several deconvolutional operations). In the picture above, conv1_backward and conv2_backward just follow the residue pathway, and the reconstruction still keep something of the original image. But as for the conv5_x block, I make a comparison between these two result with conv5_x blocks which is quite deep in the resnet.
 
-![](https://github.com/mousecpn/resnet_AI_HW1/edit/master/images\图片1.png)
+![](https://github.com/mousecpn/resnet_AI_HW1/edit/master/images/图片1.png)
 
 The result show that if we just follow the residue pathway, the reconstructions seem making no sense. However, if we just follow the shortcut, it seems that there are still some pattern remaining, although they are very blurred  due to the information loss during the forward of resnet.
 
@@ -80,7 +80,7 @@ And there is another way to reconstruct the image. Using a certain feature maps 
 
 Here is the visualization.
 
-![图片5](https://github.com/mousecpn/resnet_AI_HW1/edit/master/images\图片5.png)
+![图片5](https://github.com/mousecpn/resnet_AI_HW1/edit/master/images/图片5.png)
 
 #### Feedback
 
