@@ -12,7 +12,7 @@ batch_size = 256
 
 cross entropy: 0.8189
 
-![1571490866051](https://github.com/mousecpn/resnet_AI_HW1/edit/master/images\1571490866051.png)
+![1571490866051](https://github.com/mousecpn/resnet_AI_HW1/edit/master/images/1571490866051.png)
 
 Training accuracy: 92.44%
 
